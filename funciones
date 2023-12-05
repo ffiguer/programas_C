@@ -1,0 +1,44 @@
+# include <stdio.h>
+/*prototipos de funcion*/
+int suma(int a, int b); //prototipo de funcion suma
+int resta(int a, int b); //prototipo de funcion resta
+int multiplicacion(int a, int b); //prototipo de funcion multiplicacion
+float division(float a, float b); //prototipo de funcion division
+
+int main (void) //funcion principal
+
+{
+	float x,y,sum, rest, mul, div;
+	printf("\n\n\t digite dos numeros:");
+	scanf("%f %f", &x, &y);
+	sum=suma(x,y);
+	rest=resta(x,y);
+	mul=multiplicacion(x,y);
+	div=division(x,y);
+	printf("\n\n\t el resultado de la suma es:%.2f",sum);
+	printf("\n\n\t el resultado de la resta es:%.2f",rest);
+	printf("\n\n\t el resultado de la multiplicacion es:%.2f",mul);
+	printf("\n\n\t el resultado de la division es:%.2f",div);
+	return 0;	
+}
+
+int suma(int a, int b){
+     //funcion suma
+	
+	return a+b;
+}
+
+int resta(int a, int b){
+   
+	return a-b;
+}
+
+int multiplicacion(int a, int b){
+    
+	return a*b;
+}
+
+float division(float a, float b){
+    
+	return a/b;
+}
