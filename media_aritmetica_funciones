@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int mediaAritmetica(int x, int y);
+
+int main(void){
+	int a,b,c;
+	printf("\n\n\t introduzca los valores para sacar el promedio:");
+	scanf("%i %i", &a,&b);
+	c=mediaAritmetica(a,b);
+	printf("\n\n\t la media aritmetica es: %d",c);
+	return 0;	
+}
+
+int mediaAritmetica(int x, int y){
+	int prom;
+	prom = (x+y)/2;
+	return prom;
+}
