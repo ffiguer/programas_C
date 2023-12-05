@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void par() {
+	int a;
+	printf("\n\n\t digite un numero:");
+	scanf("%i", &a);
+	if( a % 2 == 0){
+		printf("\n\n\t el numero %d es par.", a);
+	}else{
+		printf("\n\n\t el numero %d es impar.", a);
+		
+	}
+}
+
+int main(){
+	par();
+	return 0;
+}
