@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int mediaAritmetica(int x, int y);
+int mediaAritmetica(int x, int y); //prototipo de funcion
 
 int main(void){
 	int a,b,c;
