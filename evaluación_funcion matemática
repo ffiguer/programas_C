@@ -1,0 +1,19 @@
+# include <stdio.h>
+
+int main()
+{
+	float f,x;
+	printf("\n\n\t introduzca el valor para evaluar la funcion:");
+	scanf("%f", & x);
+	
+	if( x <= 0.0)
+	{
+		f=(x*x)-x;
+		printf("\n\n\t F(%.1f)=%.2f",x,f);
+	}
+	else{
+		f = -(x*x)+(3*x);
+		printf("\n\n\t F(%.1f)=%.2f",x,f);
+		return 0;
+	}
+}
