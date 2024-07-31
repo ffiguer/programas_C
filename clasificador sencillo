@@ -1,0 +1,24 @@
+/*escribir una sentencia if-else que clasifique un entero en una de las siguientes caterogias y escriba un mensaje adecuado
+a < 0 o bien 0<=x<=100 o bien x > 100 */
+#include <stdio.h>
+
+int main ()
+{
+	int a; //definición de variables
+	printf("\n\n\t introduzca un numero entero:"); 
+	scanf("%d", &a);
+	
+	if (a < 0){    
+		printf("\n\n\t numero: %d, hace parte de los valores menores que cero",a); 
+	}
+	
+	else if ( 0 <=a && a <=100){ //si los 3 son iguales
+		printf("\n\n\t numero: %d, hace parte del intervalo de 0 a 100",a);
+	}
+	else if (a > 100){
+		printf("\n\n\t numero: %d, hace parte de los numeros mayores que 100",a);
+	}
+	
+	return 0;
+
+}
