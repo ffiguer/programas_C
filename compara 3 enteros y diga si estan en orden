@@ -1,0 +1,23 @@
+/*programa que lea 3 enteros y entregue un mensaje que indique si están o no en orden numérico */
+#include <stdio.h>
+
+int main ()
+{
+	int a,b,c; //definición de variables
+	printf("\n\n\t introduzca 3 numeros:"); //introducir los 3 numeros para comparar
+	scanf("%d" "%d" "%d", &a, &b, &c);
+	
+	if (a < b && a < c && b < c){    // si a es menor que b y a es menor que c 
+		printf("\n\n\t los numeros estan en orden numerico"); //imprima que los numeros están en orden
+	}
+	
+	else if (a == b && a ==c && b==c){ //si los 3 son iguales
+		printf("\n\n\t los numeros son iguales");//imprima que los 3 son iguales
+	}
+	else{
+		printf("\n\n\t los numeros estan en desorden"); //sino imprima que están en desorden
+	}
+	
+	return 0;
+
+}
