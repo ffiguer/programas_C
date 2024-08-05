@@ -1,0 +1,64 @@
+/*escribir un programa que introduzca el numero de un mes (1-12) y visualice el número de dias de ese mes
+ej: enero: 31, febrero: 29-28 (preguntar si es año bisiesto o no) */
+
+#include <stdio.h>
+
+int main ()
+
+{
+	int mes, bisiesto;
+	printf("\n\n\t introduzca un n%cmero del mes (1-12):",163);
+	scanf("%d",& mes);
+	switch(mes)
+	{
+		case 1:
+		printf("\n\n\t enero = 31 dias");
+		break;
+		case 2:
+		printf(" es a%co bisiesto? si es a%co bisiesto introduzca 0, sino es bisiesto introduzca 1:",164,164);
+		scanf("%d", & bisiesto);
+		if (bisiesto == 0)
+		{
+			printf("\n\n\t febrero = 29 dias");
+		}
+		
+		else if (bisiesto == 1)
+		{
+		  printf("\n\n\t febrero = 28 dias");	
+		}
+		break;
+		case 3:
+		printf("\n\n\t marzo = 31 dias");
+		break;
+		case 4:
+		printf("\n\n\t abril = 30 dias");
+		break;
+		case 5:
+		printf("\n\n\t mayo = 31 dias");
+		break;
+		case 6:
+		printf("\n\n\t junio = 30 dias");
+		break;
+		case 7:
+		printf("\n\n\t julio = 31 dias");
+		break;
+		case 8:
+		printf("\n\n\t agosto = 31 dias");
+		break;
+		case 9:
+		printf("\n\n\t septiembre = 30 dias");
+		break;
+		case 10:
+		printf("\n\n\t octubre= 31 dias");
+		break;
+		case 11:
+		printf("\n\n\t noviembre = 30 dias");
+		break;
+		case 12:
+		printf("\n\n\t diciembre = 31 dias");
+		break;
+		default:
+		printf(" ha introducido un dato erroneo, intente de nuevo");
+	}
+	return 0;
+}
