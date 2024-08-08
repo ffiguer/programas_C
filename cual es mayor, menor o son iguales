@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main ()
+{
+	int a,b,c;
+	printf("\n\n\t introduzca tres numeros:");
+	scanf("%d %d %d",&a,&b,&c);
+	if(a > b && a >c)
+	{
+		printf("\n\n\t el mayor es: %d",a);
+	}
+	if(b > a && b > c)
+	{
+		printf("\n\n\t el mayor es: %d",b);
+	}
+	if(c > a && c > b)
+	{
+		printf("\n\n\t el mayor es: %d",c);
+	}
+	if ( a==b==c)
+	{
+		printf("\n\n\t  son iguales");
+	}
+	return 0;
+
+}
