@@ -1,0 +1,23 @@
+/* fechas de los domingos de pascua por año*/
+#include <stdio.h>
+
+int main ()
+{
+	int anio, N, A, B, C, D, E;
+	printf("\n\n\t introduzca el a%co para determinar el domingo de pascua:",164);
+	scanf("%d",&anio);
+	A = anio % 19;
+	B = anio % 4;
+	C = anio % 7;
+	D = ((19*A)+24) % 30;
+	E = ((2*B) + (4 * C) + (6*D)+5) % 7;
+	N = (22 + D + E);
+	if (N <= 3)
+	{
+		printf("\n\n\t el dia del mes de marzo es: %d", N);
+	}
+		if (N > 31)
+	{
+		printf("\n\n\t el dia del mes de abril es: %d", N);
+	}
+}
