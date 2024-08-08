@@ -1,0 +1,23 @@
+# include <stdio.h>
+int main()
+{
+	char caracter;
+	printf("\n\n\t introduzca el caracter que usted quiera:");
+	scanf("%c",&caracter);
+	if( caracter >='0' && caracter <='9')
+	{
+		printf("\n\n\t es un digito");
+	}
+	else if ((caracter >= 'a' && caracter <='z')|| (caracter >='A'&& caracter <= 'Z'))
+	{
+		printf("\n\n\t es un caracter alfabetico");
+	}
+	else if ( caracter == '.' || caracter ==',' || caracter ==';' || caracter == '-'){
+		printf("\n\n\t es un caracter tipo punto");
+	}
+	else{
+		printf("\n\n\t es un caracter especial");
+	}
+	
+	return 0;
+}
