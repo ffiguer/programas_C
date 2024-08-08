@@ -1,0 +1,38 @@
+/*clasificador de notas*/
+#include <stdio.h>
+int main ()
+{
+	float nota;
+	printf("\n\n\t introduzca la nota definitiva del semestre:");
+	scanf("%f", & nota);
+	if(  0 <= nota && nota <= 5.0)
+	{
+		printf("\n\n\t reprobado");
+	
+	}
+	
+	else if ( 5.0 <= nota && nota <=6.5)
+	{ 
+	printf("\n\n\t aprobado");
+		
+	}
+	
+		else if ( 6.5 <= nota && nota <=8.5)
+	{ 
+	printf("\n\n\t notable");
+		
+	}
+	
+		else if ( 8.5 <= nota && nota <=10.0)
+	{ 
+	printf("\n\n\t sobresaliente");
+		
+	}
+	
+		else if ( nota >= 10)
+	{ 
+	printf("\n\n\t matricula de honor");
+		
+	}
+	return 0;
+}
