@@ -1,0 +1,41 @@
+/* cuatro enteros entre 0 y 100 representan las puntuaciones de un estudiante de un curso de informatica.
+Escribir un programa para encontrar la media de estas puntuaciones y visualizar una tabla de notas de acuerdo con lo siguiente
+Media= 90 - 100 Puntuación =A
+Media= 80 - 89 Puntuación =B
+Media= 70 - 79 Puntuación =C
+Media= 60 - 59 Puntuación =D
+Media= 0 - 59 Puntuación =E */
+
+#include <stdio.h>
+int main ()
+{
+	int nota_a, nota_b, nota_c, nota_d, resultado;
+	printf("\n\n\t introduzca las puntuaciones del estudiante en el curso de inform%ctica:",160);
+	scanf ("%d %d %d %d", &nota_a, &nota_b, &nota_c,&nota_d);
+	resultado = (nota_a + nota_b +nota_c + nota_d) / 4;
+    if (resultado >=90 && resultado <=100)
+	{
+    printf ("puntuaci%cn es A",162);
+	}
+	else if (resultado >=80 && resultado <=89)
+	{
+    printf ("puntuaci%cn es B",162);
+	}
+	else if (resultado >=70 && resultado <=79)
+	{
+    printf ("puntuaci%cn es C",162);
+	}
+	else if (resultado >=60 && resultado <=59)
+	{
+    printf ("puntuaci%cn es D",162);
+	}
+	else if (resultado >=0 && resultado<=59)
+	{
+    printf ("puntuaci%cn es E",162);
+	}
+	else if (resultado <0 || resultado >100)
+	{
+	printf ("error");	
+	}
+	return 0;
+}
