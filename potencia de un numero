@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main()
+{
+	int b,e,i,acum=1;
+	printf("\n\n\t base:");
+	scanf("%d",& b);
+	printf("\n\n\t exponente:");
+	scanf("%d",& e);
+	
+	for (i=1;i<=n;i++)
+	{   
+		acum=acum*b;
+	}
+	printf("\n\n\t la potencia es:%d",acum);	
+}
