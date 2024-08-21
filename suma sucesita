@@ -1,0 +1,18 @@
+/*Ejercicio 7. Escriba un programa que pida un número N e imprima en pantalla la suma de todos
+los números entre 0 y N (incluyéndose el mismo).
+Ej: si se ingresa 5: 1+2+3+4+5=15, por lo que se debe imprimir:
+La sumatoria desde 0 hasta 5 es: 15*/
+
+#include <stdio.h>
+int main()
+{
+	int n, i,acum=0;
+	printf("\n\n\t introduzca un numero:");
+	scanf("%d",& n);
+	for (i=0;i<=n;i++)
+	{   
+		acum=acum+i;
+	}
+	printf("\n\n\t la suma es:%d",acum);	
+}
+
