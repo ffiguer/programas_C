@@ -1,0 +1,24 @@
+//* contador de 0 a 7 
+# include <stdio.h>
+# include <unistd.h>
+
+int main ()
+{
+	int c=0, b=0, a=0;
+	
+	while(a !=-1)
+	{ 
+		printf("\n\n\t %d %d %d ",c,b,a);
+		a++;
+		sleep(1);
+		printf("\n\n\t %d %d %d ",c,b,a);
+		a--;
+		b =!b;
+		sleep(1);
+		if(a == 0 && b == 0){
+			c= !c;
+		sleep(0.5);
+		}
+			
+	}	
+}
