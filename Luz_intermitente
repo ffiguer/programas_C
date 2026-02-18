@@ -1,0 +1,15 @@
+# include <stdio.h>
+# include <unistd.h>
+int main ()
+{
+int estado_led=0;
+while(estado_led != -1)
+{
+printf("\n\n\t led= %d",estado_led);
+estado_led ++;
+sleep(1);
+printf("\n\n\t led= %d",estado_led);
+estado_led --;
+sleep(1);
+}
+}
